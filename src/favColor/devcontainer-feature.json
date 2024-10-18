@@ -1,0 +1,29 @@
+{
+  "id": "favColor",
+  "version": "1.0.0",
+  "name": "favColor",
+  "description": "Outputs the user's favorite color",
+  "options": {
+    "color": {
+      "type": "string",
+      "default": "blue",
+      "description": "Choose your favorite color",
+      "enum": [
+        "red",
+        "green",
+        "blue",
+        "yellow",
+        "purple",
+        "orange",
+        "pink",
+        "brown",
+        "gray",
+        "black",
+        "white"
+      ]
+    }
+  },
+  // make sure common-utils is installed first
+  "installsAfter": ["ghcr.io/devcontainers-contrib/features/common-utils:1"],
+  "postCreateCommand": "echo \"Your favorite color is ${{ options.color }}\" > /tmp/favColor.txt"
+}

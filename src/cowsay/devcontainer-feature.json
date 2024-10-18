@@ -1,0 +1,46 @@
+{
+  "name": "cowsay",
+  "version": "1.0.0",
+  "description": "Installs cowsay",
+  "options": {
+    "installMessage": {
+      "type": "string",
+      "default": "Hello from cowsay, I am installed",
+      "description": "The message to display when the feature has been installed"
+    },
+    "animal": {
+      "type": "string",
+      "default": "cow",
+      "description": "The animal to display when the feature has been installed",
+      "enum": [
+        "apt",
+        "beavis.zen",
+        "bong",
+        "bud-frogs",
+        "bunny",
+        "calvin",
+        "cheese",
+        "cock",
+        "cower",
+        "daemon",
+        "default",
+        "dragon",
+        "mech-and-cow",
+        "meow",
+        "milk",
+        "moofasa",
+        "moose",
+        "mutilated",
+        "pony",
+        "pony-smaller",
+        "ren",
+        "sheep",
+        "skeleton",
+        "snowman"
+      ]
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers-contrib/features/common-utils:1"
+  ]
+}
